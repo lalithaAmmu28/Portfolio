@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lalitha Maheswari | Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    body {
+        background: white;
+        color: black;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+        background: white;
+        border-bottom: 2px solid lavender;
+    }
+    .navbar a {
+        color: black !important;
+        font-weight: 500;
+    }
+    .navbar a:hover {
+        color: purple !important;
+    }
+    .hero {
+        padding: 40px 20px;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid lavender;
+        box-shadow: 0 0 20px rgba(230, 230, 250, 0.9);
+    }
+    .section-title {
+        margin-top: 40px;
+        font-weight: bold;
+        color: purple;
+        border-bottom: 2px solid lavender;
+        padding-bottom: 5px;
+    }
+    /* Lightning Glow Effect */
+    .glass-card {
+        background: white;
+        border: 2px solid lavender;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(230, 230, 250, 0.8);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+    .glass-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(147, 112, 219, 1), 0 0 40px rgba(186, 85, 211, 0.7);
+    }
+    .btn-github {
+        background-color: black;
+        color: white;
+        font-size: 0.9rem;
+    }
+    .btn-github:hover {
+        background-color: lavender;
+        color: black;
+    }
+    footer {
+        background: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero container mt-5 pt-4">
+    <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <img src="my_Image.jpeg" alt="Lalitha Maheswari" class="profile-img">
+        </div>
+        <div class="col-md-9">
+            <h2 class="fw-bold">Lalitha Maheswari Gudala</h2>
+            <p>Full Stack Developer | Spring Boot | React.js | SQL</p>
+            <div>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-primary btn-sm me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="btn btn-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- Skills -->
+<h3 id="skills" class="section-title">Skills</h3>
+<div class="glass-card lightning-effect">
+    <div class="row text-center">
+        <div class="col-md-4">💻 HTML</div>
+        <div class="col-md-4">🎨 CSS</div>
+        <div class="col-md-4">⚙️ JavaScript</div>
+
+        <div class="col-md-4">☕ Java</div>
+        <div class="col-md-4">🌱 Spring Boot</div>
+        <div class="col-md-4">🗄️ MySQL</div>
+
+       <div class="col-md-4"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+        <div class="col-md-4">🔧 Git</div>
+    </div>
+</div>
+</div>
+
+
+    <!-- Projects -->
+    <h3 id="projects" class="section-title">Projects</h3>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="glass-card">
+                <img src="ems.jpeg" alt="Employee Management System" class="img-fluid rounded mb-2" style="height:200px; object-fit:cover;">
+                <h5>
+                    <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#project1" role="button">
+                        Employee Management System <i class="fas fa-chevron-down"></i>
+                    </a>
+                </h5>
+                <div class="collapse" id="project1">
+                    <p>Developed with Spring Boot, Thymeleaf, MySQL, and Spring Security. Includes RBAC, CRUD, and PDF payslip generation.</p>
+                    <a href="https://github.com/lalithaAmmu28/ems" target="_blank" class="btn btn-github btn-sm"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="glass-card">
+                <img src="expense.jpg" alt="Personal Finance Tracker" class="img-fluid rounded mb-2" style="height:200px; object-fit:cover;">
+                <h5>
+                    <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#project2" role="button">
+                        Personal Finance & Expense Tracker <i class="fas fa-chevron-down"></i>
+                    </a>
+                </h5>
+                <div class="collapse" id="project2">
+                    <p>Built using Spring Boot & React.js. Tracks expenses, generates reports, and offers category-wise analysis.</p>
+                    <a href="https://github.com/lalithaAmmu28/Personal-Finance-and-Expense-Tracker" target="_blank" class="btn btn-github btn-sm"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <h3 id="experience" class="section-title">Experience</h3>
+    <div class="glass-card text-center">
+        <a class="fw-bold text-dark text-decoration-none" data-bs-toggle="collapse" href="#experienceBox" role="button">
+            <i class="fas fa-briefcase"></i> Full Stack Developer Intern - ExcelR
+        </a>
+        <div class="collapse mt-3" id="experienceBox">
+            <ul>
+                <li>Developed backend APIs using Spring Boot and MySQL.</li>
+                <li>Implemented role-based access control for 1000+ users.</li>
+                <li>Improved performance by 30% through query optimization.</li>
+            </ul>
+            <a href="https://github.com/lalithaAmmu28/ems" target="_blank" class="btn btn-github btn-sm mt-2">
+                <i class="fab fa-github"></i> Project Repo
+            </a>
+            <a href="excelR.pdf" target="_blank" class="btn btn-success btn-sm mt-2 ms-2">
+                <i class="fas fa-certificate"></i> View Certificate
+            </a>
+        </div>
+    </div>
+
+    <!-- Certifications -->
+    <h3 id="certifications" class="section-title">Certifications</h3>
+    <div class="glass-card text-center">
+        <a class="fw-bold text-dark text-decoration-none" data-bs-toggle="collapse" href="#certificationsBox" role="button">
+            <i class="fas fa-certificate"></i> View Certifications
+        </a>
+        <div class="collapse mt-3" id="certificationsBox">
+            <ul class="list-unstyled">
+                <li class="mb-2">NPTEL Certification in Cloud Computing <a href="nptel.jpg" target="_blank"><i class="fas fa-external-link-alt ms-2 text-primary"></i></a></li>
+                <li class="mb-2">Introduction to Networks – Cisco <a href="ccna.pdf" target="_blank"><i class="fas fa-external-link-alt ms-2 text-primary"></i></a></li>
+                <li class="mb-2">Salesforce Developer Virtual Internship <a href="Salesforce.pdf" target="_blank"><i class="fas fa-external-link-alt ms-2 text-primary"></i></a></li>
+                <li class="mb-2">SQL Certificate – HackerRank <a href="sql.pdf" target="_blank"><i class="fas fa-external-link-alt ms-2 text-primary"></i></a></li>
+                <li>Web Development Internship – Raise Digital <a href="raise.pdf" target="_blank"><i class="fas fa-external-link-alt ms-2 text-primary"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <h3 id="education" class="section-title">Education</h3>
+    <div class="glass-card">
+        🎓 B.Tech (CSE) – MVGR College, 8.13 CGPA<br>
+        📘 MPC – Sasi Junior College, 9.88 CGPA<br>
+        🏫 ICSE – Fort Catholic Girls' School, 84%
+    </div>
+
+    <!-- Hobbies -->
+    <h3 id="hobbies" class="section-title">Hobbies</h3>
+    <div class="glass-card">
+        🎻 Playing Violin<br>
+        💃 Dancing<br>
+        🎨 Art & Drawing
+    </div>
+
+    <!-- Contact -->
+    <h3 id="contact" class="section-title">Contact</h3>
+    <div class="glass-card">
+        📧 <a href="mailto:gudalalalithamaheswari4180@gmail.com" class="text-dark">gudalalalithamaheswari4180@gmail.com</a><br>
+        📱 <a href="tel:+919581190816" class="text-dark">+91 9581190816</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Lalitha Maheswari | Professional Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
